@@ -8,21 +8,16 @@ exports.seed = async function (knex) {
   await knex("favorites").insert([
     {
       id: 1,
-      title: "Odyssey",
-      main_character: "Odysseus",
-      year_released: 2026,
+      title: "TMNT ",
+      main_character: "The Turtles",
+      year_released: "1987",
     },
-    {
-      id: 2,
-      title: "Super Mario Brothers",
-      main_character: "Mario",
-      year_released: 2024,
-    },
+    { id: 2, title: "Batman", main_character: "Batman", year_released: "1990" },
     {
       id: 3,
-      title: "Pokemon the Movie 2000",
-      main_character: "Ash Ketchum",
-      year_released: 2000,
+      title: "Deadpool",
+      main_character: "Deadpool",
+      year_released: "2015",
     },
   ]);
 };

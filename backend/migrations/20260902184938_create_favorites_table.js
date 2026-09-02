@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("favorites", (table) => {
     table.increments("id").primary();
     table.string("title", 200);
-    table.string("main_character", 100);
+    table.string("main_character", 200);
     table.integer("year_released");
   });
 };
